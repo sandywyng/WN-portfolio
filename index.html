@@ -11,6 +11,13 @@
 .project-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.project-visual.peach{background:var(--orange);min-height:280px}.services{grid-template-columns:repeat(2,1fr);column-gap:50px;row-gap:38px}.project-wide .project-body{padding:30px}.project-wide .visual-title{font-size:39px}.project-wide .project-visual{padding:30px}.project-wide .stat-row{margin-top:15px}@media(max-width:700px){.project-wide,.services{grid-template-columns:1fr}.project-wide .project-visual{min-height:240px}.project-wide .visual-title{font-size:34px}.project-wide .project-body{padding:27px 28px}}
 </style>
 <link rel="stylesheet" href="design.css?v=circle-fill-only-5">
+<style>
+/* Equal columns for the experience summary, with readable wrapping. */
+.experience-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:22px;align-items:start}
+.experience-summary>div{min-width:0}
+.experience-summary strong{line-height:1.4;text-wrap:balance}
+@media(max-width:480px){.experience-summary{grid-template-columns:1fr;row-gap:18px}}
+</style>
 <script defer src="design.js"></script>
 <script defer src="portrait.js"></script>
 </head>
