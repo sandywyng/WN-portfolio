@@ -77,3 +77,14 @@
 .evidence-table-compact .rate-low{background:#f7cadb;color:#242623}
 .evidence-table-compact .rate-mid{background:#cfebcc;color:#242623}
 .evidence-table-compact .rate-high{background:#4f8a45;color:#fff}
+/* Case 07: work sample in the panel. Table on wide screens, image link on small screens */
+.project-wide{min-width:0;overflow:clip}
+.project-wide .project-visual{min-width:0}
+@media(min-width:701px){.project-wide:has(details[open]) .project-visual{align-self:flex-start}}
+@media(min-width:701px) and (max-width:1279px) and (min-height:700px){.project-wide:has(details[open]) .project-visual{position:sticky;top:24px}}
+@media(min-width:1280px) and (min-height:1080px){.project-wide:has(details[open]) .project-visual{position:sticky;top:24px}}
+.project-visual .panel-sample-label{font-size:12px;letter-spacing:.8px;text-transform:uppercase;margin:26px 0 0}
+.project-visual .evidence-table-wrap{background:#fff;border-radius:6px;margin:22px 0 14px;padding:6px 6px 0;align-self:stretch;box-sizing:border-box;width:100%}
+.project-visual .evidence-table caption{padding:8px 4px 0}
+.panel-sample-image{display:none}
+@media(max-width:1279px){.project-visual .evidence-table-wrap{display:none}.panel-sample-image{display:block;margin:14px 0;color:inherit;align-self:stretch}.panel-sample-image img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);background:#fff}.panel-sample-image span{display:inline-block;margin-top:10px;font-size:14px;text-decoration:underline;text-underline-offset:3px}}
