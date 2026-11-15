@@ -68,3 +68,12 @@
 #services .service-output li{display:list-item;padding:3px 0 3px 4px;margin:0 0 8px;border:0}
 #services .service-output li::marker{color:var(--ink)}
 #services .service-output li:last-child{margin-bottom:0}
+/* Case 07 work sample: keep wide tables inside the text column */
+.project-wide .project-body{min-width:0}
+.evidence-table-compact{min-width:520px}
+.evidence-table-compact td{min-width:0}
+.evidence-table-compact th,.evidence-table-compact td{padding-left:8px;padding-right:8px}
+.evidence-table-compact td:nth-child(n+5){min-width:120px}
+.evidence-table-compact .rate-low{background:#f7cadb;color:#242623}
+.evidence-table-compact .rate-mid{background:#cfebcc;color:#242623}
+.evidence-table-compact .rate-high{background:#4f8a45;color:#fff}
